@@ -1,0 +1,17 @@
+<h1>Global Customers</h1>
+<table id="customers">
+  <tr>
+    <th>No.</th>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let cust of customers; let i = index;">
+    <td>{{i+1}}</td>
+    <td>{{cust.company}}</td>
+    <td>{{cust.contact}}</td>
+    <td>{{cust.country}}</td>
+    <td><button type="button" (click)="test(cust)">View</button></td>
+  </tr>
+</table>
