@@ -241,7 +241,7 @@ export class BookComponent implements OnInit, OnDestroy {
   }
 
   onPageDown(event: MouseEvent, page: Page): void {
-    // if (page.front.isComponent || page.back.isComponent) { return; }
+    if (page.front.isComponent || page.back.isComponent) { return; }
     if (TweenLite.getTweensOf(page, true).length > 0) { return; }
 
     if (page.lock) {

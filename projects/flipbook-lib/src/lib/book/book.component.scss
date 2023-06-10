@@ -4,3 +4,24 @@
   position: relative;
   perspective-origin: center;
 }
+
+.pr {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.pc {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-10 {
+  width: 10%;
+}
